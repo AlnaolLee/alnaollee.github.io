@@ -4,6 +4,9 @@ title: Contact
 permalink: /contact/
 ---
 
-# My Projects
 
-Here’s a list of my awesome projects...
+Any inquiries about me or my projects you can reach me at [alexandersanglee@gmail.com](mailto:alexandersanglee@gmail.com).
+
+- [GitHub](https://github.com/alnaollee)
+- [LinkedIn](https://www.linkedin.com/in/yourusername/)
+
