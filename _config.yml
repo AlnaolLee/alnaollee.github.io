@@ -35,6 +35,7 @@ plugins:
 header_pages:
   - about.markdown
   - projects.markdown
+  - blog.md
   - contact.markdown
 
 collections:
