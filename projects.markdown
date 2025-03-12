@@ -5,10 +5,11 @@ permalink: /projects/
 ---
 
 <ul>
-  {% for project in site.projects %}
+  {% assign sorted_projects = site.projects | sort: "date" %}
+  {% for project in sorted_projects reversed %}
     <li>
       <a href="{{ project.url }}">{{ project.title }}</a>
-      <small>2025</small>
+      <small>{{ project.duration }}</small>
       <p>{{ project.summary }}</p>
     </li>
   {% endfor %}
