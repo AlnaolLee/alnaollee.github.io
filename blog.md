@@ -8,13 +8,15 @@ posts_title: ""
 # Posts
 
 <select id="tag-filter">
-  <option value="all">All</option>
-  <option value="coding">Coding</option>
-  <option value="jekyll">Jekyll</option>
-  <!-- Add more options as needed -->
+    <option value="all">All</option>
+    <option value="school">School</option>
+    <option value="hobby">Hobby</option>
+    <option value="life">Life</option>
+    <option value="misc">Misc.</option>
 </select>
 
-{% for post in site.posts %}
+{% assign main_posts = site.posts | where_exp:"post", "post.dev_blog != true" %}
+{% for post in main_posts %}
   <div class="post" data-tags="{{ post.tags | join:',' }}">
     <small>{{ post.date | date: "%B %d, %Y" }}</small>
     <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>

@@ -1,0 +1,33 @@
+---
+layout: default
+---
+
+<div class="project-page">
+  <header class="project-header">
+    <h1 class="project-title">{{ page.title }}</h1>
+    {% if page.summary %}
+      <p class="project-summary">{{ page.summary }}</p>
+    {% endif %}
+  </header>
+
+  <div class="project-content">
+    {{ content }}
+  </div>
+
+  {% if page.show_devblogs != false %}
+  <hr>
+  <section class="project-devblogs">
+    <h2>Dev Blogs</h2>
+    <ul>
+      {% for post in site.posts %}
+        {% if post.categories contains page.project_category %}
+          <li>
+            <a href="{{ post.url }}">{{ post.title }}</a>
+            <small>{{ post.date | date: "%B %d, %Y" }}</small>
+          </li>
+        {% endif %}
+      {% endfor %}
+    </ul>
+  </section>
+  {% endif %}
+</div>

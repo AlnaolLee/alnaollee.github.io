@@ -8,7 +8,8 @@ permalink: /projects/
   {% for project in site.projects %}
     <li>
       <a href="{{ project.url }}">{{ project.title }}</a>
-      <small>{{ project.date | date: "%B %d, %Y" }}</small>
+      <small>2025</small>
+      <p>{{ project.summary }}</p>
     </li>
   {% endfor %}
 </ul>
