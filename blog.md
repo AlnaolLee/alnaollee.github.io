@@ -9,7 +9,7 @@ posts_title: ""
 
 <select id="tag-filter">
     <option value="all">All</option>
-    <option value="school">School</option>
+    <option value="academia">Academia</option>
     <option value="hobby">Hobby</option>
     <option value="life">Life</option>
     <option value="misc">Misc.</option>
